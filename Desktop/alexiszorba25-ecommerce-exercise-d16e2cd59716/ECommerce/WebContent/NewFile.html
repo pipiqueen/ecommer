@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>  here</title>
+</head>
+<body>
+<select id= categorias onchange="seleccionarCategorias()">
+<option value ="1"> Cliquee para buscar por categoria
+<option value = "2">a
+<option value = "3">s
+<option value = "4">a
+<option value = "5">s
+<option value = "6">d
+<option value = "7">a
+<option value = "8">s
+<option value = "9">d
+<option value = "10">a
+<option value = "11">s
+
+</select>
+<script tyoe="text/javascript">
+function seleccionarCategorias(){
+	var x = document.getElementById("categorias").value;
+	window.location.href = "/servlet?category="+x;
+}
+
+</script>
+</body>
+</html>
